@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stylish Semantic HTML Example</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                background-color: #f0f8ff;
+                color: #333;
+            }
+            header {
+                background-color: #4caf50;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            header nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            header nav ul li {
+                display: inline;
+                margin: 0 15px;
+            }
+            header nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            main {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+            section, article, aside {
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                flex: 1 1 calc(33% - 40px);
+                margin: 10px;
+            }
+            section h2, article h2, aside h2 {
+                color: #4caf50;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+            @media (max-width: 768px) {
+                main {
+                    flex-direction: column;
+                }
+                section, article, aside {
+                    flex: 1 1 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <h1>Website Header</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section id="home">
+                <h2>Home Section</h2>
+                <p>Welcome to the home section.</p>
+            </section>
+    
+            <article>
+                <h2>Main Article</h2>
+                <p>This is the main article content.</p>
+            </article>
+    
+            <aside>
+                <h2>Sidebar</h2>
+                <p>This is the sidebar content.</p>
+            </aside>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Your Company</p>
+        </footer>
+    
+    </body>
+    </html>
